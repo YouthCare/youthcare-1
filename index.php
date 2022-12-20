@@ -3,7 +3,7 @@
 session_start();
 
 include_once("config.php");
-$result = mysqli_query($mysqli, "SELECT * FROM 
+$result = mysqli_query($mysqli, "SELECT * FROM tb_user");
 
 ?>
 
