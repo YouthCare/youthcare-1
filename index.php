@@ -2,8 +2,10 @@
 
 session_start();
 
-include_once("config.php");
-$result = mysqli_query($mysqli, "SELECT * FROM tb_user");
+if (!isset($_SESSION["index"])) {
+	header("Location: index.php");
+	exit;
+}
 
 ?>
 
